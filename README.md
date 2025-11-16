@@ -40,5 +40,3 @@ The application provides a beautiful UI and includes **three fully playable game
 - ✔️ Easily extendable for future games  
 
 ---
-
-## 📂 Project Structure
