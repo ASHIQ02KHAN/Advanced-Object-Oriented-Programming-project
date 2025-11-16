@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" alignment="CENTER" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gamezone.HomeController">
+    <!-- Game Zone Title with Neon Effect -->
+    <Label text="Game Zone" style="-fx-font-size:36px; -fx-font-weight: bold; -fx-text-fill: #ff6b6b; -fx-background-color: #1d1d1d; -fx-padding: 20px; -fx-background-radius: 15px; -fx-effect: dropshadow(three-pass-box, rgba(255, 107, 107, 1), 10, 0.5, 0, 0);"/>
+
+    <!-- Button Container -->
+    <HBox spacing="20" alignment="CENTER">
+        <!-- Buttons with Neon Effects -->
+        <Button text="Tic Tac Toe" onAction="#openTicTacToe" style="-fx-padding: 10px; -fx-background-color: #2c3e50; -fx-background-radius: 10px; -fx-font-size: 16px; -fx-text-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 1), 10, 0.5, 0, 0);"/>
+        <Button text="Hangman" onAction="#openHangman" style="-fx-padding: 10px; -fx-background-color: #2c3e50; -fx-background-radius: 10px; -fx-font-size: 16px; -fx-text-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 1), 10, 0.5, 0, 0);"/>
+        <Button text="Snake Game" onAction="#openSnakeGame" style="-fx-padding: 10px; -fx-background-color: #2c3e50; -fx-background-radius: 10px; -fx-font-size: 16px; -fx-text-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0, 255, 0, 1), 10, 0.5, 0, 0);"/>
+    </HBox>
+</VBox>

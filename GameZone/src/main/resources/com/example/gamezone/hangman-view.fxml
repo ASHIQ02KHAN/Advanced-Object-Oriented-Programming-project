@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="15" alignment="CENTER" style="-fx-background-color: #ffffff;"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gamezone.HangmanController">
+
+    <!-- Hangman Image -->
+    <ImageView fx:id="hangmanImage" fitWidth="200" fitHeight="250" preserveRatio="true"/>
+
+    <!-- Word Placeholder -->
+    <Label fx:id="lblWord" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+
+    <!-- Status -->
+    <Label fx:id="lblStatus" style="-fx-font-size: 20px; -fx-text-fill: #e74c3c;"/>
+
+    <!-- Alphabet Buttons -->
+    <GridPane fx:id="alphabetGrid" hgap="10" vgap="10" alignment="CENTER"/>
+
+    <!-- Control Buttons -->
+    <HBox alignment="CENTER">
+        <Button text="Back to Home" onAction="#backToHome"
+                style="-fx-background-color: #34495e; -fx-text-fill: #1abc9c; -fx-font-weight: bold; -fx-padding: 8px 16px; -fx-background-radius: 10px;"/>
+    </HBox>
+</VBox>

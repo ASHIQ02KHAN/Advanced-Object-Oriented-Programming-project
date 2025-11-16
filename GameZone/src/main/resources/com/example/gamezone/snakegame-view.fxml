@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gamezone.SnakeGameController"
+      style="-fx-background-color: #0f2b3c;"
+      prefWidth="600" prefHeight="440">
+
+    <Label fx:id="lblScore" text="Length: 1"
+           style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+    <StackPane fx:id="canvasContainer"
+               VBox.vgrow="ALWAYS"
+               style="-fx-background-color: black;"
+               prefHeight="360"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Restart" onAction="#restartGame"
+                style="-fx-background-color: #f39c12; -fx-text-fill: white; -fx-font-weight: bold;"/>
+        <Button text="Back to Home" onAction="#backToHome"
+                style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold;"/>
+    </HBox>
+
+</VBox>
